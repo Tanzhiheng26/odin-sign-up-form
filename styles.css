@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('./fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F8F9F9;
+}
+
+.image-container {
+    position: relative;
+    color: white;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 12px;
+}
+
+.logo-background {
+    font-family: 'norsebold';
+    font-size: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+img { 
+    display: block; 
+}
+
+a[href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"] {
+    color: #EAECEE;
+}
+
+.form-row {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 15px;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    font-size: 16;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    margin: 30px 0;
+    cursor:pointer;
+}
+
+label {
+    font-weight: bold;
+    color: #7B7D7D;
+    font-size: 14px;
+}
+
+input {
+    padding: 5px;
+    width: 250px;
+    outline: none;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+form {
+    background-color: white;
+    padding-left: 50px;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+.sign-in-button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 1.5px solid #0066FF;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px lightgrey;
+}
+
+input[type="password"]:invalid {
+    outline: none;
+    border: 1.5px solid red;
+    border-radius: 3px;
+    box-shadow: none;
+}
